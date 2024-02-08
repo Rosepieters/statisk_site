@@ -44,7 +44,7 @@ p,
   padding-bottom: 30px;
   padding-left: 20px;
   color: rgb(16, 89, 44);
-  border-style: solid;
+  border-style:dotted;
   font-size: 18px;
 }
 .kategori li a {
