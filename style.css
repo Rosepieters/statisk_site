@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+main {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+footer {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(74, 74, 74);
+}
+h1,
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 18px;
+  color: rgb(74, 74, 74);
+  padding-top: 15px;
+}
+p,
+.vaelg_str {
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 5px;
+  color: rgb(74, 74, 74);
+  font-size: 18px;
+}
+.kategori li {
+  font-family: "Josefin Sans", sans-serif;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: rgb(144, 144, 144) 0.8px;
+  border-style: solid;
+  font-size: 18px;
+}
+.kategori li a {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: rgb(57, 57, 57);
+}
+.kategori li a:hover {
+  text-decoration: underline;
+}
+ol {
+  padding-left: 0;
+  padding-top: 60px;
+}
+h2 a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+nav li {
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(126, 126, 126);
+}
+nav a:link {
+  text-decoration: none;
+}
+nav li a:hover,
+nav li.active a {
+  color: black;
+}
+.logo {
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+/*BURGER-MENU*/
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.bar {
+  background-color: rgb(44, 44, 44);
+  margin: 3px 0;
+  transition: 0.4s;
+  width: 30px;
+  height: 2px;
+}
+.close-icon {
+  display: none;
+  cursor: pointer;
+}
+.close-icon .bar {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(44, 44, 44);
+  margin: 2px 0;
+  transition: 0.4s;
+}
+.burger-menu.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-3px, -2px);
+}
+.burger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-14px, -7px);
+}
+/*BURGER-MENU*/
+
+.produktliste article.udsolgt img {
+  opacity: 0.3;
+}
+.produktliste article.udsolgt::before {
+  content: "Udsolgt";
+  position: absolute;
+  background-color: white;
+  padding: 1.5rem;
+  color: red;
+  font-weight: bold;
+  z-index: 1;
+  font-family: "Josefin Sans", sans-serif;
+}
+.rabat-pris {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.vaelg_str {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(74, 74, 74);
+  font-size: 18px;
+  padding-top: 15px;
+}
+.kurv {
+  margin-top: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(74, 74, 74);
+  font-size: 18px;
+  padding: 10px;
+  border-color: rgb(74, 74, 74);
+  border-radius: 8px;
+}
+.kurv:hover {
+  background-color: gainsboro;
+}
+.produkt-link {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(74, 74, 74);
+  font-size: 18px;
+}
+.produkt-link:hover {
+  text-decoration: underline;
+}
+.products {
+  border: none;
+  background-color: rgb(237, 237, 237);
+  padding: 30px;
+}
+
+@media (min-width: 800px) {
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .info {
+    padding-top: 150px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .burger-menu {
+    display: flex;
+    padding-top: 40px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav ul {
+    display: none;
+  }
+  .nav.active ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .nav.active ul li {
+    padding: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 80px;
+  }
+}

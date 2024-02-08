@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Produktliste</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html">FASHION R US</a>
+            </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="burger-menu-content">
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="kategori.html">KATEGORI</a></li>
+                <li class="active"><a href="produktliste.html">PRODUKTLISTE</a></li>
+                <li><a href="produkt.html">PRODUKT</a></li>
+            </ul>
+            <div class="close-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="produktliste">
+        <template>
+            <article class="products">
+                <img src="" alt="her kommer der et billede">
+                <h2 class="productName"></h2>
+                <p class="price"><span></span> DKK</p>
+                <p class="rabat-pris">Rabat: <span></span>%</p>
+                <p class="udsolgt"></p>
+                <a class="produkt-link" href="produkt.html">Se detaljer</a>
+            </article>
+        </template>
+    </main>
+
+    <footer>// Statisk site</footer>
+    <script src="javascript/burgermenu.js"></script>
+    <script src="javascript/produktliste.js"></script>
+</body>
+
+</html>

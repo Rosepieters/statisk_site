@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Produkt</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html">FASHION R US</a>
+            </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="burger-menu-content">
+                <li><a href="index.html">HJEM</a></li>
+                <li><a href="kategori.html">KATEGORI</a></li>
+                <li><a href="produktliste.html">PRODUKTLISTE</a></li>
+                <li class="active"><a href="produkt.html">PRODUKT</a></li>
+            </ul>
+            <div class="close-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="grid_2-2">
+            <div>
+                <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="Tshirt">
+            </div>
+            <section class="info">
+                <h1>Sahara Team India Fanwear Round Neck Jersey</h1>
+                <p class="price">DKK</p>
+                <p class="brand">Mærke:</p>
+                <p class="gender">Køn:</p>
+                <p class="number">Varenummer:</p>
+                <p class="rabat-pris">Rabat: <span></span>%</p>
+                <p class="status"></p>
+                <div class="vaelg_str">
+                    <label for="clothingSize">Størrelse: </label>
+                    <select id="clothingSize" onchange="changeClothingSize(this.value)">
+                        <option value="small">XS</option>
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                        <option value="extra-large">XL</option>
+                    </select>
+                    <p><button class="kurv" onclick="vælgStørrelse()">Læg i kurv</button></p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>// Statisk site</footer>
+    <script src="javascript/burgermenu.js"></script>
+    <script src="javascript/produkt.js"></script>
+</body>
+
+</html>
