@@ -13,25 +13,28 @@ main {
   margin-right: 8%;
 }
 
+body{
+background-color: rgb(207, 206, 206);}
+
 footer {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
   font-family: "Josefin Sans", sans-serif;
-  color: rgb(74, 74, 74);
+  color:#333;
 }
 h1,
 h2 {
   font-family: "Josefin Sans", sans-serif;
   padding-bottom: 18px;
-  color: rgb(74, 74, 74);
+  color:#333;
   padding-top: 15px;
 }
 p,
 .vaelg_str {
   font-family: "Josefin Sans", sans-serif;
   padding-bottom: 5px;
-  color: rgb(74, 74, 74);
+  color:#333;
   font-size: 18px;
 }
 .kategori li {
@@ -40,7 +43,7 @@ p,
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  border: rgb(144, 144, 144) 0.8px;
+  color: rgb(16, 89, 44);
   border-style: solid;
   font-size: 18px;
 }
@@ -58,7 +61,7 @@ ol {
 }
 h2 a {
   text-decoration: none;
-  color: rgb(74, 74, 74);
+  color:#333;
 }
 
 nav {
@@ -85,19 +88,19 @@ nav li {
 nav a {
   text-decoration: none;
   display: inline-block;
-  color: rgb(126, 126, 126);
+  color: rgb(16, 89, 44);
 }
 nav a:link {
   text-decoration: none;
 }
 nav li a:hover,
 nav li.active a {
-  color: black;
+  color: rgb(156, 155, 155);
 }
 .logo {
-  font-size: 40px;
+  font-size: 55px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 550;
 }
 
 /*BURGER-MENU*/
@@ -158,17 +161,17 @@ nav li.active a {
 }
 .vaelg_str {
   font-family: "Josefin Sans", sans-serif;
-  color: rgb(74, 74, 74);
+  color:#333;
   font-size: 18px;
   padding-top: 15px;
 }
 .kurv {
   margin-top: 15px;
   font-family: "Josefin Sans", sans-serif;
-  color: rgb(74, 74, 74);
+  color:#333;
   font-size: 18px;
   padding: 10px;
-  border-color: rgb(74, 74, 74);
+  color:#333;
   border-radius: 8px;
 }
 .kurv:hover {
@@ -177,7 +180,7 @@ nav li.active a {
 .produkt-link {
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  color: rgb(74, 74, 74);
+  color:#333;
   font-size: 18px;
 }
 .produkt-link:hover {
